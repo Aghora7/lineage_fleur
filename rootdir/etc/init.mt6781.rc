@@ -1093,6 +1093,7 @@ on property:sys.boot_completed=1
     write /proc/sys/net/ipv4/ip_no_pmtu_disc 0
     # stop bootprof
     write /proc/bootprof 0
+    write /dev/stune/top-app/schedtune.boost 1
 
 # TouchPad settings
     on property:sys.tp.grip_enable=0
