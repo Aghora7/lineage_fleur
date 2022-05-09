@@ -213,7 +213,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     WifiOverlay \
-    TetheringConfigOverlay
+    TetheringConfigOverlay \
+    CarrierConfigOverlay
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
