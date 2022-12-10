@@ -31,5 +31,12 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 # Assert
 TARGET_OTA_ASSERT_DEVICE := fleur,miel
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := fleur
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6781
+
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
