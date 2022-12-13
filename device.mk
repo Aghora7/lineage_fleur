@@ -314,6 +314,20 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.mt6781.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.mt6781.rc \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6781 \
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.0.vendor \
+    android.hardware.radio@1.1.vendor \
+    android.hardware.radio@1.2.vendor \
+    android.hardware.radio@1.3.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.6.vendor
+    
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
