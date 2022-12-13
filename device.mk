@@ -360,6 +360,11 @@ PRODUCT_SOONG_NAMESPACES += \
 # Soundtrigger
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor \
+    android.hardware.thermal@1.0-impl
     
 # USB
 PRODUCT_PACKAGES += \
