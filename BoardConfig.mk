@@ -98,5 +98,8 @@ BOARD_HAS_MTK_HARDWARE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6781
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
