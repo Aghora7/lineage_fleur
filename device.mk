@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.composer@2.2-service \
-    libdrm.vendor
+    libdrm.vendor \
+    libdrm
     
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
