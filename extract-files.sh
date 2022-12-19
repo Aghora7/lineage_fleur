@@ -49,6 +49,14 @@ while [ "${#}" -gt 0 ]; do
     shift
 done
 
+function blob_fixup {
+    case "$1" in
+        vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
+            grep -q "libcamera_metadata_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
+            ;;
+    esac
+}
+
 if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
