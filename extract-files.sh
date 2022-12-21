@@ -76,7 +76,9 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "$2"
             ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
-            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
+            ;&
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+           "${PATCHELF}" --replace-needed "libcodec2_hidl@1.0.so" "libcodec2_hidl-mtk@1.0.so" "${2}"
             ;;
     esac
 }
