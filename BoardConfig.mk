@@ -92,6 +92,7 @@ TARGET_COPY_OUT_PRODUCT := product
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6781
+BOARD_HAS_MTK_HARDWARE := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
