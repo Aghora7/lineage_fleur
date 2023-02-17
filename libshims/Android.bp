@@ -1,5 +1,6 @@
 //
 // Copyright (C) 2023 The LineageOS Project
+// Copyright (C) 2023 The PixelExperience Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -17,3 +18,13 @@ cc_library_shared {
     ],
 }
 
+cc_library_shared {
+    name: "libshim_vtservice",
+    srcs: ["libshim_vtservice.cpp"],
+    shared_libs: ["libaudioclient"],
+    header_libs: [
+        "libaudioclient_headers",
+        "libmedia_headers",
+        "libmediametrics_headers",
+    ],
+}

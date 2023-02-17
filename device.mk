@@ -221,7 +221,8 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_PACKAGES += \
-    libshim_sink
+    libshim_sink \
+    libshim_vtservice \
     
 # Keymaster
 PRODUCT_PACKAGES += \
