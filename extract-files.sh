@@ -54,6 +54,9 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             grep -q "libcamera_metadata_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
             ;;
+        lib64/libsink.so)
+            "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
+            ;;
     esac
 }
 

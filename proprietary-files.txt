@@ -2309,7 +2309,7 @@ lib/libmtkavenhancements.so
 lib64/libmtkperf_client.so
 lib/libmtkperf_client.so
 lib64/libsignal.so
-lib64/libsink.so
+lib64/libsink.so|6217ca3fc0a8bcb7984ac6150488c351235fe57e
 lib64/libsource.so
 lib64/libvcodec_cap.so
 lib/libvcodec_cap.so
