@@ -122,3 +122,6 @@ overlay /system/etc/permissions overlay ro,lowerdir=/mnt/vendor/mi_ext/system/et
 
 
 /dev/block/platform/bootdevice/by-name/vbmeta /vbmeta emmc defaults defaults
+
+# ZRAM
+/dev/block/zram0                  none                   swap   defaults                                                                                                     zramsize=55%
