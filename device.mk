@@ -500,7 +500,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
     wpa_supplicant \
     hostapd \
-    libwifi-hal-mt66xx
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
