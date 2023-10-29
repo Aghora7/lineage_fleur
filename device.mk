@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-    
+
 # Characteristics    
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -166,7 +166,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm@1.3.vendor \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Display
 PRODUCT_PACKAGES += \
