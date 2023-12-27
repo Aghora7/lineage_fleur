@@ -14,16 +14,7 @@ BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    boot \
-    dtbo \
-    system \
-    system_ext \
-    product \
-    vendor \
-    vbmeta \
-    vbmeta_system \
-    vbmeta_vendor \
+
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # APEX
