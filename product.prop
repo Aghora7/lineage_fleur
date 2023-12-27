@@ -107,5 +107,4 @@ ro.vendor.xiaomi.bl.poll=true
 ro.whitepoint_calibration_enable=false
 ro.xiaomi.bl.poll=true
 setupwizard.feature.baseline_setupwizard_enabled=true
-setupwizard.theme=glif_v3_light
 vendor.display.disable_dynamic_sf_idle=1
