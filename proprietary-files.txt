@@ -1699,7 +1699,6 @@ vendor/lib64/android.hardware.health@2.1.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so
 
 # HotwordEnrollment
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Keymaster
@@ -2304,12 +2303,10 @@ lib64/libimsma_socketwrapper.so
 lib64/libmtk_vt_service.so
 lib64/libmtk_vt_wrapper.so
 lib/libmtk_vt_wrapper.so
-lib64/libmtkavenhancements.so
-lib/libmtkavenhancements.so
 lib64/libmtkperf_client.so
 lib/libmtkperf_client.so
 lib64/libsignal.so
-lib64/libsink.so|6217ca3fc0a8bcb7984ac6150488c351235fe57e
+lib64/libsink.so
 lib64/libsource.so
 lib64/libvcodec_cap.so
 lib/libvcodec_cap.so
@@ -2324,7 +2321,6 @@ lib/libvsim-adaptor-client.so
 -framework/mediatek-ims-base.jar
 -framework/mediatek-ims-common.jar
 framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
 -framework/mediatek-telecom-common.jar
 -framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
