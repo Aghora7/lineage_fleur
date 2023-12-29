@@ -273,3 +273,6 @@ vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=1
 vendor.connsys.driver.ready=no
 vendor.mtk.vdec.waitkeyframeforplay=9
+
+# Display
+debug.renderengine.backend=gles
