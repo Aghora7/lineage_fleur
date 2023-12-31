@@ -272,9 +272,17 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
 
 PRODUCT_PACKAGES += \
-    WifiOverlay \
-    TetheringConfigOverlay \
-    CarrierConfigOverlay
+    FrameworksResOverlayFleur \
+    TetheringOverlayFleur \
+    WifiOverlayFleur \
+    SystemUIOverlayFleur \
+    SettingsOverlayFleur \
+    SettingsLibOverlayFleur \
+    SimpleDeviceConfigOverlayFleur \
+    FleurWifiOverlay \
+    FleurpWifiOverlay \
+    MielWifiOverlay \
+    MielpWifiOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
