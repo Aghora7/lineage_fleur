@@ -478,20 +478,11 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.1.vendor \
-    android.hardware.wifi@1.2.vendor \
-    android.hardware.wifi@1.3.vendor \
-    android.hardware.wifi@1.4.vendor \
-    android.hardware.wifi@1.5.vendor \
-    android.hardware.wifi.hostapd@1.0.vendor \
-    android.hardware.wifi.hostapd@1.1.vendor \
-    android.hardware.wifi.hostapd@1.2.vendor \
-    android.hardware.wifi.hostapd@1.3.vendor \
-    android.hardware.wifi.supplicant@1.0.vendor \
-    android.hardware.wifi.supplicant@1.1.vendor \
-    android.hardware.wifi.supplicant@1.2.vendor \
-    android.hardware.wifi.supplicant@1.3.vendor \
-    android.hardware.wifi.supplicant@1.4.vendor \
+    android.hardware.wifi-service \
+    wpa_supplicant \
+    hostapd \
+    
+PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor
@@ -501,11 +492,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-
-PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
-    wpa_supplicant \
-    hostapd \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
