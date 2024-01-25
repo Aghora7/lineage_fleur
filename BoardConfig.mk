@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/xiaomi/fleur
 
+KERNEL_PATH := device/xiaomi/viva-kernel
+
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -66,6 +68,12 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_CONFIG := sea_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sea
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+
+BOARD_VENDOR_KERNEL_MODULES := \
+    $(foreach module,$(wildcard $(KERNEL_PATH)/modules/*.ko), \
+        $(module))
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
