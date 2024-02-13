@@ -69,22 +69,19 @@ TARGET_KERNEL_CONFIG := sea_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sea
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
-
 BOARD_VENDOR_KERNEL_MODULES := \
-    $(foreach module,$(wildcard $(KERNEL_PATH)/modules/*.ko), \
+    $(foreach module,$(wildcard $(DEVICE_PATH)/configs/modules/*.ko), \
         $(module))
 
-# Kernel - prebuilt
+# Kill lineage kernel build task while preserving kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_COPY_FILES += \
+    device/xiaomi/fleur/prebuilts/kernel:kernel
+
 TARGET_FORCE_PREBUILT_KERNEL := true
-ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilts/dtb.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-BOARD_KERNEL_SEPARATED_DTBO := true
-endif
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
