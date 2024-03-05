@@ -466,8 +466,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek \
-    android.hardware.vibrator-V2-ndk_platform.vendor
+    android.hardware.vibrator-service.mediatek
 
 # VNDK
 PRODUCT_COPY_FILES += \
