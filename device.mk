@@ -16,16 +16,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # A/B
 AB_OTA_UPDATER := true
 
-AB_OTA_PARTITIONS := \
-    boot \
-    dtbo \
-    system \
-    product \
-    vendor \
-    vbmeta \
-    vbmeta_system \
-    vbmeta_vendor \
-
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
