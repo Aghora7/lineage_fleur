@@ -94,5 +94,8 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_BOARD_PLATFORM := mt6781
 BOARD_HAS_MTK_HARDWARE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6781
+
 # Inherit the proprietary files
 include vendor/xiaomi/fleur/BoardConfigVendor.mk
